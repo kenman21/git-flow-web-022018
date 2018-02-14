@@ -115,21 +115,21 @@ describe "GIT" do
   end
 
   it "16. What is the syntax for switching to a branch called 'add-social-media-links'?" do
-    answer = "?"
+    answer = "git checkout add-social-media-links"
     encoded_answer = "1004b71629950e1efa0fe94f053b772b170d66b3"
     expect(encode(answer)).to eq(encoded_answer)
   end
 
   it "17. What is the syntax for switching to master from a feature branch called 
      'add-nav-bar'" do
-    answer = "?"
+    answer = "git checkout master"
     encoded_answer = "0899840db4703b45cc69576b6ec53615d552370d"
     expect(encode(answer)).to eq(encoded_answer)
   end
 
   it "18. What is the one line syntax for creating and switching to a branch called 
      'add-nav-bar'?" do
-    answer = "?"
+    answer = "git checkout -b add-nav-bar"
     encoded_answer = "f6317616a8601aeb64c0f27f71a4b7bf9e3b8453"
     expect(encode(answer)).to eq(encoded_answer)
   end
@@ -137,7 +137,7 @@ describe "GIT" do
   it "19. 'git branch style-image' followed by 'git checkout style-image' 
       is the same as 'git checkout -b style-image'" do
     # "true" or "false", in a string
-    answer = "?"
+    answer = "true"
 
     encoded_answer = "5ffe533b830f08a0326348a9160afafc8ada44db"
     expect(encode(answer)).to eq(encoded_answer)
@@ -145,7 +145,7 @@ describe "GIT" do
 
   it "20. It is best practice to add a feature on the master branch" do
     # "true" or "false", in a string
-    answer = "?"
+    answer = "false"
 
     encoded_answer = "7cb6efb98ba5972a9b5090dc2e517fe14d12cb04"
     expect(encode(answer)).to eq(encoded_answer)
@@ -154,7 +154,7 @@ describe "GIT" do
   it "21. If you're working on a project on master and you create a new branch, 
       that branch will be empty until you add code" do
     # "true" or "false", in a string
-    answer = "?"
+    answer = "true"
 
     encoded_answer = "7cb6efb98ba5972a9b5090dc2e517fe14d12cb04"
     expect(encode(answer)).to eq(encoded_answer)
